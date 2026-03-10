@@ -16,15 +16,14 @@ export default function FearGreed() {
   const active = periodData[period]
 
   // Gauge SVG params
-  const size = 240
+  const size = 300
   const cx = size / 2
-  const cy = size / 2
-  const r = 90
+  const cy = size / 2 + 20
+  const r = 100
   const startAngle = 135
   const endAngle = 405
   const totalArc = endAngle - startAngle // 270 degrees
   const scorePct = data.score / 100
-  const scoreAngle = startAngle + scorePct * totalArc
 
   // Convert angle to radians for SVG arc
   const toRad = (deg) => (deg * Math.PI) / 180
@@ -41,8 +40,13 @@ export default function FearGreed() {
 
   // Needle endpoint
   const needleAngle = toRad(startAngle + scorePct * totalArc)
-  const needleX = cx + (r - 15) * Math.cos(needleAngle)
-  const needleY = cy + (r - 15) * Math.sin(needleAngle)
+  const needleX = cx + (r - 20) * Math.cos(needleAngle)
+  const needleY = cy + (r - 20) * Math.sin(needleAngle)
+
+  // Label positions (outside the arc)
+  const fearLabelAngle = toRad(startAngle)
+  const greedLabelAngle = toRad(endAngle)
+  const labelR = r + 25
 
   const change = data.score - data.lastYearScore
 
@@ -53,8 +57,8 @@ export default function FearGreed() {
         <div className="flex justify-center">
           <motion.svg
             width={size}
-            height={size * 0.75}
-            viewBox={`0 0 ${size} ${size * 0.75}`}
+            height={size * 0.65}
+            viewBox={`0 0 ${size} ${size * 0.65}`}
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ type: 'spring', damping: 20, stiffness: 100 }}
@@ -72,7 +76,7 @@ export default function FearGreed() {
               d={arcPath(startAngle, endAngle, r)}
               fill="none"
               stroke="#1e1e2e"
-              strokeWidth="16"
+              strokeWidth="18"
               strokeLinecap="round"
             />
 
@@ -81,7 +85,7 @@ export default function FearGreed() {
               d={arcPath(startAngle, endAngle, r)}
               fill="none"
               stroke="url(#gauge-grad)"
-              strokeWidth="16"
+              strokeWidth="18"
               strokeLinecap="round"
               initial={{ pathLength: 0 }}
               animate={{ pathLength: 1 }}
@@ -101,39 +105,22 @@ export default function FearGreed() {
               animate={{ opacity: 1 }}
               transition={{ delay: 0.8, duration: 0.4 }}
             />
-            <circle cx={cx} cy={cy} r="5" fill="#a855f7" />
+            <circle cx={cx} cy={cy} r="6" fill="#a855f7" />
 
-            {/* Score text */}
-            <text
-              x={cx}
-              y={cy - 20}
-              textAnchor="middle"
-              fill="#a855f7"
-              fontSize="42"
-              fontFamily="var(--font-mono)"
-              fontWeight="bold"
-            >
-              {data.score}
-            </text>
-
-            {/* Label text */}
-            <text
-              x={cx}
-              y={cy + 5}
-              textAnchor="middle"
-              fill="#a855f7"
-              fontSize="12"
-              fontFamily="var(--font-mono)"
-              fontWeight="bold"
-              letterSpacing="3"
-            >
-              {data.label}
-            </text>
-
-            {/* Scale labels */}
-            <text x={cx - r - 5} y={cy + 20} textAnchor="middle" fill="#ef4444" fontSize="9" fontFamily="var(--font-mono)">FEAR</text>
-            <text x={cx + r + 5} y={cy + 20} textAnchor="middle" fill="#22c55e" fontSize="9" fontFamily="var(--font-mono)">GREED</text>
+            {/* Scale labels — positioned outside the arc ends */}
+            <text x={35} y={cy + 30} textAnchor="middle" fill="#ef4444" fontSize="10" fontFamily="var(--font-mono)" fontWeight="bold" letterSpacing="2">FEAR</text>
+            <text x={size - 35} y={cy + 30} textAnchor="middle" fill="#22c55e" fontSize="10" fontFamily="var(--font-mono)" fontWeight="bold" letterSpacing="2">GREED</text>
           </motion.svg>
+        </div>
+
+        {/* Score and label BELOW the gauge, not inside it */}
+        <div className="text-center mt-4">
+          <div className="font-[family-name:var(--font-mono)] text-5xl font-bold" style={{ color: '#a855f7' }}>
+            {data.score}
+          </div>
+          <div className="font-[family-name:var(--font-mono)] text-sm font-bold tracking-[0.25em] mt-2" style={{ color: '#a855f7' }}>
+            {data.label}
+          </div>
         </div>
       </div>
 
