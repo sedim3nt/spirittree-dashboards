@@ -1,0 +1,17 @@
+{
+  "score": 63,
+  "label": "OPTIMISTIC",
+  "signals": [
+    { "name": "AI layoff announcements", "value": 58, "weight": 20 },
+    { "name": "AI hiring volume", "value": 71, "weight": 15 },
+    { "name": "Congressional AI mentions", "value": 52, "weight": 10 },
+    { "name": "Social sentiment", "value": 65, "weight": 20 },
+    { "name": "AI startup funding", "value": 78, "weight": 10 },
+    { "name": "Regulation activity", "value": 42, "weight": 10 },
+    { "name": "Capability velocity", "value": 68, "weight": 15 }
+  ],
+  "history30d": [55, 57, 56, 58, 60, 59, 62, 61, 63, 64, 63, 65, 62, 63],
+  "history90d": [42, 45, 48, 50, 52, 51, 53, 55, 56, 58, 57, 60, 62, 63],
+  "history365d": [35, 38, 32, 40, 42, 45, 48, 50, 52, 55, 58, 60, 63],
+  "lastYearScore": 42
+}
