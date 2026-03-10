@@ -1,0 +1,26 @@
+{
+  "thoughtsPerDay": 6200,
+  "cognitiveEventsPerDay": 70000,
+  "humanCognitiveHours": 5.5,
+  "tokensEquivalent": 1550000,
+  "models": [
+    { "name": "GPT-5.4", "seconds": 3.7, "tokensPerSec": 420000 },
+    { "name": "Claude 4.6 Sonnet", "seconds": 5.2, "tokensPerSec": 298000 },
+    { "name": "Gemini 2.5 Ultra", "seconds": 6.1, "tokensPerSec": 254000 },
+    { "name": "Claude 4.6 Opus", "seconds": 8.4, "tokensPerSec": 185000 },
+    { "name": "GPT-4o", "seconds": 22.0, "tokensPerSec": 70000 }
+  ],
+  "historical": [
+    { "date": "2023 Q1", "model": "GPT-4", "seconds": 62 },
+    { "date": "2023 Q3", "model": "GPT-4 Turbo", "seconds": 38 },
+    { "date": "2024 Q1", "model": "Claude 3 Opus", "seconds": 28 },
+    { "date": "2024 Q2", "model": "Claude 3.5 Sonnet", "seconds": 18 },
+    { "date": "2024 Q4", "model": "GPT-4o", "seconds": 14 },
+    { "date": "2025 Q1", "model": "Claude 4.5 Sonnet", "seconds": 9.2 },
+    { "date": "2025 Q3", "model": "Gemini 2.0 Ultra", "seconds": 7.1 },
+    { "date": "2026 Q1", "model": "Claude 4.6 Sonnet", "seconds": 5.2 },
+    { "date": "2026 Q1", "model": "GPT-5.4", "seconds": 3.7 }
+  ],
+  "projectionDate": "Q3 2027",
+  "projectionSeconds": 0.8
+}
