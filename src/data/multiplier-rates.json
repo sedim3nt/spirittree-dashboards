@@ -1,0 +1,20 @@
+{
+  "tasks": [
+    { "name": "Email drafting", "multiplier": 4, "source": "Internal benchmarks" },
+    { "name": "Code generation", "multiplier": 4, "source": "GitHub Copilot research" },
+    { "name": "Research & analysis", "multiplier": 6, "source": "McKinsey 2025" },
+    { "name": "Content writing", "multiplier": 4.5, "source": "Various studies" },
+    { "name": "Data entry", "multiplier": 15, "source": "Automation benchmarks" },
+    { "name": "Customer support", "multiplier": 5, "source": "Intercom/Zendesk data" },
+    { "name": "Meeting summaries", "multiplier": 10, "source": "Otter.ai benchmarks" }
+  ],
+  "roles": [
+    { "name": "Engineer", "avgCost": 85 },
+    { "name": "Designer", "avgCost": 70 },
+    { "name": "Marketer", "avgCost": 65 },
+    { "name": "Analyst", "avgCost": 75 },
+    { "name": "Writer", "avgCost": 55 },
+    { "name": "Operations", "avgCost": 60 },
+    { "name": "Customer Service", "avgCost": 45 }
+  ]
+}
