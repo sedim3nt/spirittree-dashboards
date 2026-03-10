@@ -1,0 +1,107 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg: #0a0a0c;
+  --color-bg-card: #111114;
+  --color-bg-glow: #1a1a2e;
+  --color-border: #1e1e2e;
+  --color-text: #e8e8f0;
+  --color-text-dim: #8888a0;
+  --color-text-muted: #555566;
+
+  --color-emerald: #00ff88;
+  --color-emerald-deep: #059669;
+  --color-ruby: #ef4444;
+  --color-ruby-deep: #dc2626;
+  --color-amber: #f59e0b;
+  --color-amber-deep: #d97706;
+  --color-sapphire: #3b82f6;
+  --color-sapphire-deep: #2563eb;
+  --color-amethyst: #a855f7;
+  --color-amethyst-deep: #9333ea;
+  --color-citrine: #eab308;
+  --color-citrine-deep: #ca8a04;
+  --color-gold: #fbbf24;
+  --color-gold-deep: #b45309;
+  --color-teal: #14b8a6;
+  --color-teal-deep: #0d9488;
+  --color-rose: #f43f5e;
+  --color-rose-deep: #e11d48;
+  --color-opal: #e2e8f0;
+  --color-opal-gold: #ffd700;
+
+  --font-mono: "SF Mono", "Fira Code", "Cascadia Code", monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  min-height: 100vh;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-border);
+  border-radius: 3px;
+}
+
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  background: var(--color-border);
+  height: 4px;
+  border-radius: 2px;
+  outline: none;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+input[type="number"] {
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  color: var(--color-text);
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.5rem;
+  font-family: var(--font-mono);
+  outline: none;
+}
+
+input[type="number"]:focus {
+  border-color: var(--color-text-muted);
+}
+
+select {
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  color: var(--color-text);
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.5rem;
+  outline: none;
+}
