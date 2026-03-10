@@ -1,0 +1,22 @@
+{
+  "activeAgents": 47200000,
+  "stats": {
+    "agentCodePct": 38,
+    "agentContentPct": 22,
+    "costPerAgentHour": 0.42,
+    "humanToAgentRatio": "14:1"
+  },
+  "sectors": [
+    { "name": "Software Development", "pct": 42 },
+    { "name": "Research & Analysis", "pct": 28 },
+    { "name": "Content Generation", "pct": 22 },
+    { "name": "Customer Support", "pct": 35 },
+    { "name": "Financial Services", "pct": 18 }
+  ],
+  "agentGDP": "$340B",
+  "autonomySpectrum": [
+    { "level": "Copilot", "pct": 55 },
+    { "level": "Semi-Autonomous", "pct": 32 },
+    { "level": "Fully Autonomous", "pct": 13 }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "score": 58,
+  "label": "ACCELERATING",
+  "signals": [
+    { "name": "AI job posting ratio", "value": 62, "source": "Indeed/LinkedIn" },
+    { "name": "Hiring rate in exposed roles", "value": 55, "source": "BLS" },
+    { "name": "Model capability benchmark", "value": 71, "source": "LMSYS Arena" },
+    { "name": "Automation API volume", "value": 48, "source": "Usage reports" },
+    { "name": "Corporate AI capex", "value": 64, "source": "Earnings" },
+    { "name": "Public sentiment", "value": 45, "source": "X/Reddit NLP" }
+  ],
+  "sectors": [
+    { "name": "Tech", "score": 72 },
+    { "name": "Finance", "score": 61 },
+    { "name": "Creative", "score": 67 },
+    { "name": "Healthcare", "score": 35 },
+    { "name": "Legal", "score": 54 },
+    { "name": "Manufacturing", "score": 28 }
+  ],
+  "history90d": [42, 44, 43, 45, 47, 46, 48, 50, 49, 51, 52, 53, 55, 54, 56, 58]
+}
