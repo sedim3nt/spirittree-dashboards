@@ -3,12 +3,12 @@ import { motion } from 'framer-motion'
 export function HBar({ label, value, max = 100, color = '#00ff88', suffix = '%', sub }) {
   const pct = Math.min((value / max) * 100, 100)
   return (
-    <div className="mb-3">
-      <div className="flex justify-between text-xs mb-1">
-        <span className="text-text-dim">{label}</span>
-        <span className="font-mono" style={{ color }}>{value}{suffix}</span>
+    <div className="mb-4">
+      <div className="flex justify-between text-xs mb-2">
+        <span className="text-text font-medium">{label}</span>
+        <span className="font-mono font-bold" style={{ color }}>{value}{suffix}</span>
       </div>
-      <div className="h-2 bg-bg rounded-full overflow-hidden">
+      <div className="h-2.5 bg-bg rounded-full overflow-hidden">
         <motion.div
           initial={{ width: 0 }}
           animate={{ width: `${pct}%` }}
@@ -17,7 +17,7 @@ export function HBar({ label, value, max = 100, color = '#00ff88', suffix = '%',
           style={{ background: `linear-gradient(90deg, ${color}66, ${color})` }}
         />
       </div>
-      {sub && <div className="text-text-muted text-xs mt-0.5">{sub}</div>}
+      {sub && <div className="text-text-muted text-xs mt-1">{sub}</div>}
     </div>
   )
 }
