@@ -173,16 +173,25 @@ export default function ArmsRace() {
         {data.contextWindow.map((c) => {
           const logVal = Math.log10(c.tokens)
           const logMax = maxLogCtx
+          const pct = (logVal / logMax) * 100
+          const display = c.tokens >= 1000000 ? `${(c.tokens / 1000000).toFixed(1)}M` : c.tokens >= 1000 ? `${(c.tokens / 1000).toFixed(0)}K` : c.tokens
           return (
-            <HBar
-              key={c.model}
-              label={`${c.model} (${c.date})`}
-              value={logVal}
-              max={logMax}
-              color="#eab308"
-              suffix=""
-              sub={`${c.tokens.toLocaleString()} tokens`}
-            />
+            <div key={c.model} className="mb-4">
+              <div className="flex justify-between text-xs mb-2">
+                <span className="text-text font-medium">{c.model} ({c.date})</span>
+                <span className="font-mono font-bold" style={{ color: '#eab308' }}>{display}</span>
+              </div>
+              <div className="h-2.5 bg-bg rounded-full overflow-hidden">
+                <motion.div
+                  initial={{ width: 0 }}
+                  animate={{ width: `${pct}%` }}
+                  transition={{ duration: 0.8, ease: 'easeOut' }}
+                  className="h-full rounded-full"
+                  style={{ background: 'linear-gradient(90deg, #eab30866, #eab308)' }}
+                />
+              </div>
+              <div className="text-text-muted text-xs mt-1">{c.tokens.toLocaleString()} tokens</div>
+            </div>
           )
         })}
       </Section>
