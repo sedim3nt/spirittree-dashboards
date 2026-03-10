@@ -65,9 +65,10 @@ export default function App() {
                   onClick={() => handleTab(tab.id)}
                   className="flex items-center gap-2 px-4 py-2 rounded-lg text-sm whitespace-nowrap transition-all shrink-0"
                   style={{
-                    background: activeTab === tab.id ? `${tab.color}15` : 'transparent',
-                    color: activeTab === tab.id ? tab.color : '#8888a0',
-                    borderBottom: activeTab === tab.id ? `2px solid ${tab.color}` : '2px solid transparent',
+                    background: activeTab === tab.id ? `${tab.color}15` : '#1a1a1f',
+                    color: activeTab === tab.id ? tab.color : '#b0b0c0',
+                    border: activeTab === tab.id ? `1px solid ${tab.color}40` : '1px solid #2a2a3a',
+                    borderBottom: activeTab === tab.id ? `2px solid ${tab.color}` : '2px solid #2a2a3a',
                   }}
                 >
                   <span className="text-base">{tab.icon}</span>
