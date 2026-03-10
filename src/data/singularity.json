@@ -1,0 +1,28 @@
+{
+  "clockPosition": 354,
+  "minutesToMidnight": 6,
+  "factors": [
+    { "name": "Reasoning", "value": 85, "description": "% of expert human reasoning capability" },
+    { "name": "Autonomous Tasks", "value": 50, "description": "SWE-Bench completion rate" },
+    { "name": "Scientific Discovery", "value": 35, "description": "Novel research capability" },
+    { "name": "Self-Improvement", "value": 20, "description": "Ability to improve own architecture" },
+    { "name": "Multi-Modal Integration", "value": 72, "description": "Vision, audio, code, reasoning combined" },
+    { "name": "Economic Displacement", "value": 58, "description": "Our AJDI score" },
+    { "name": "Expert Consensus", "value": 65, "description": "% of experts expect AGI by 2030" }
+  ],
+  "historicalPositions": [
+    { "year": "2020", "minutes": 60, "position": 330, "label": "11:00 PM" },
+    { "year": "2021", "minutes": 45, "position": 337, "label": "11:15 PM" },
+    { "year": "2022", "minutes": 30, "position": 342, "label": "11:30 PM" },
+    { "year": "2023", "minutes": 20, "position": 348, "label": "11:40 PM" },
+    { "year": "2024", "minutes": 12, "position": 352, "label": "11:48 PM" },
+    { "year": "2025", "minutes": 8, "position": 354, "label": "11:52 PM" },
+    { "year": "2026", "minutes": 6, "position": 356, "label": "11:54 PM" }
+  ],
+  "quotes": [
+    { "author": "Geoffrey Hinton", "text": "These things are going to be more intelligent than us. We need to worry about how we ensure they don't take over." },
+    { "author": "Yoshua Bengio", "text": "The rate of progress is faster than I expected. We need to be much more careful." },
+    { "author": "Sam Altman", "text": "AGI is going to be the most transformative technology in human history." },
+    { "author": "Demis Hassabis", "text": "We're maybe a few years away from systems that can genuinely discover new science." }
+  ]
+}
