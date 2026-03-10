@@ -1,0 +1,49 @@
+{
+  "daysSinceLastFrontier": 12,
+  "lastModel": "GPT-5.4",
+  "lastDate": "2026-02-25",
+  "timeline": [
+    { "name": "GPT-4", "company": "OpenAI", "date": "2023-03-14", "color": "#10b981" },
+    { "name": "Claude 3 Opus", "company": "Anthropic", "date": "2024-03-04", "color": "#f97316" },
+    { "name": "Gemini 1.5 Pro", "company": "Google", "date": "2024-02-15", "color": "#3b82f6" },
+    { "name": "Llama 3 70B", "company": "Meta", "date": "2024-04-18", "color": "#a855f7" },
+    { "name": "Claude 3.5 Sonnet", "company": "Anthropic", "date": "2024-06-20", "color": "#f97316" },
+    { "name": "GPT-4o", "company": "OpenAI", "date": "2024-05-13", "color": "#10b981" },
+    { "name": "Gemini 2.0 Flash", "company": "Google", "date": "2024-12-11", "color": "#3b82f6" },
+    { "name": "DeepSeek V3", "company": "DeepSeek", "date": "2024-12-26", "color": "#ef4444" },
+    { "name": "Claude 4.5 Sonnet", "company": "Anthropic", "date": "2025-02-24", "color": "#f97316" },
+    { "name": "Gemini 2.5 Pro", "company": "Google", "date": "2025-03-25", "color": "#3b82f6" },
+    { "name": "Llama 4 Maverick", "company": "Meta", "date": "2025-04-05", "color": "#a855f7" },
+    { "name": "GPT-4.1", "company": "OpenAI", "date": "2025-04-14", "color": "#10b981" },
+    { "name": "Qwen 3", "company": "Alibaba", "date": "2025-04-29", "color": "#ef4444" },
+    { "name": "Claude 4.5 Opus", "company": "Anthropic", "date": "2025-05-22", "color": "#f97316" },
+    { "name": "Claude 4.6 Sonnet", "company": "Anthropic", "date": "2025-12-12", "color": "#f97316" },
+    { "name": "Gemini 2.5 Ultra", "company": "Google", "date": "2026-01-18", "color": "#3b82f6" },
+    { "name": "GPT-5.4", "company": "OpenAI", "date": "2026-02-25", "color": "#10b981" }
+  ],
+  "benchmarks": [
+    { "model": "GPT-5.4", "arena": 1420, "swe": 62, "humaneval": 97, "mmlu": 93 },
+    { "model": "Claude 4.6 Sonnet", "arena": 1395, "swe": 58, "humaneval": 96, "mmlu": 91 },
+    { "model": "Gemini 2.5 Ultra", "arena": 1380, "swe": 55, "humaneval": 94, "mmlu": 92 },
+    { "model": "Claude 4.5 Opus", "arena": 1360, "swe": 52, "humaneval": 95, "mmlu": 90 },
+    { "model": "GPT-4.1", "arena": 1340, "swe": 48, "humaneval": 92, "mmlu": 88 },
+    { "model": "DeepSeek V3", "arena": 1310, "swe": 42, "humaneval": 90, "mmlu": 87 }
+  ],
+  "contextWindow": [
+    { "model": "GPT-3.5", "tokens": 4096, "date": "2022" },
+    { "model": "GPT-4", "tokens": 8192, "date": "2023" },
+    { "model": "Claude 2", "tokens": 100000, "date": "2023" },
+    { "model": "GPT-4 Turbo", "tokens": 128000, "date": "2023" },
+    { "model": "Gemini 1.5", "tokens": 1000000, "date": "2024" },
+    { "model": "GPT-5.4", "tokens": 2000000, "date": "2026" }
+  ],
+  "releaseIntervals": [
+    { "period": "2022-2023", "months": 14 },
+    { "period": "2023 H1", "months": 8 },
+    { "period": "2023 H2", "months": 5 },
+    { "period": "2024 H1", "months": 3 },
+    { "period": "2024 H2", "months": 2 },
+    { "period": "2025", "months": 1.5 },
+    { "period": "2026", "months": 0.8 }
+  ]
+}
