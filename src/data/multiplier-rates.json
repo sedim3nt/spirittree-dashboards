@@ -1,20 +1,21 @@
 {
   "tasks": [
-    { "name": "Email drafting", "multiplier": 4, "source": "Internal benchmarks" },
-    { "name": "Code generation", "multiplier": 4, "source": "GitHub Copilot research" },
-    { "name": "Research & analysis", "multiplier": 6, "source": "McKinsey 2025" },
-    { "name": "Content writing", "multiplier": 4.5, "source": "Various studies" },
-    { "name": "Data entry", "multiplier": 15, "source": "Automation benchmarks" },
-    { "name": "Customer support", "multiplier": 5, "source": "Intercom/Zendesk data" },
-    { "name": "Meeting summaries", "multiplier": 10, "source": "Otter.ai benchmarks" }
+    { "name": "Email drafting", "multiplier": 5, "source": "Internal benchmarks" },
+    { "name": "Code generation", "multiplier": 5, "source": "GitHub Copilot research" },
+    { "name": "Research & analysis", "multiplier": 8, "source": "McKinsey 2026" },
+    { "name": "Content writing", "multiplier": 6, "source": "Enterprise studies" },
+    { "name": "Data entry", "multiplier": 20, "source": "Automation benchmarks" },
+    { "name": "Customer support", "multiplier": 7, "source": "Intercom/Zendesk data" },
+    { "name": "Meeting summaries", "multiplier": 15, "source": "Otter.ai benchmarks" },
+    { "name": "Legal review", "multiplier": 5, "source": "Thomson Reuters 2026" }
   ],
   "roles": [
-    { "name": "Engineer", "avgCost": 85 },
-    { "name": "Designer", "avgCost": 70 },
-    { "name": "Marketer", "avgCost": 65 },
-    { "name": "Analyst", "avgCost": 75 },
-    { "name": "Writer", "avgCost": 55 },
-    { "name": "Operations", "avgCost": 60 },
-    { "name": "Customer Service", "avgCost": 45 }
+    { "name": "Engineer", "avgCost": 90 },
+    { "name": "Designer", "avgCost": 72 },
+    { "name": "Marketer", "avgCost": 68 },
+    { "name": "Analyst", "avgCost": 78 },
+    { "name": "Writer", "avgCost": 58 },
+    { "name": "Operations", "avgCost": 62 },
+    { "name": "Customer Service", "avgCost": 48 }
   ]
 }

@@ -1,5 +1,5 @@
 {
-  "currentCost": 0.08,
+  "currentCost": 0.06,
   "currentModel": "GPT-5.4",
   "humanCost": 75,
   "history": [
@@ -10,9 +10,9 @@
     { "date": "2024 Q4", "model": "GPT-4o mini", "cost": 0.90, "pctCheaper": 98.8 },
     { "date": "2025 Q1", "model": "Claude 4.5 Sonnet", "cost": 0.45, "pctCheaper": 99.4 },
     { "date": "2025 Q3", "model": "Gemini 2.0 Flash", "cost": 0.22, "pctCheaper": 99.7 },
-    { "date": "2026 Q1", "model": "Claude 4.6 Sonnet", "cost": 0.12, "pctCheaper": 99.8 },
-    { "date": "2026 Q1", "model": "GPT-5.4", "cost": 0.08, "pctCheaper": 99.9 }
+    { "date": "2025 Q4", "model": "Claude 4.6 Sonnet", "cost": 0.12, "pctCheaper": 99.8 },
+    { "date": "2026 Q1", "model": "GPT-5.4", "cost": 0.06, "pctCheaper": 99.92 }
   ],
-  "projectionDate": "2028 Q1",
+  "projectionDate": "2027 Q4",
   "projectionCost": 0.001
 }

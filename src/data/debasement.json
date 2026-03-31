@@ -1,13 +1,13 @@
 {
-  "nationalDebt": 36800000000000,
-  "debtGrowthPerSecond": 100000,
-  "m2Supply": 21500000000000,
-  "purchasingPower1971": 0.14,
-  "realInterestRate": -1.2,
+  "nationalDebt": 39200000000000,
+  "debtGrowthPerSecond": 532,
+  "m2Supply": 22670000000000,
+  "purchasingPower1971": 0.13,
+  "realInterestRate": -0.8,
   "stats": {
-    "m2Label": "$21.5T",
-    "purchasingPowerLabel": "$0.14",
-    "realRateLabel": "-1.2%"
+    "m2Label": "$22.67T",
+    "purchasingPowerLabel": "$0.13",
+    "realRateLabel": "-0.8%"
   },
   "m2History": [
     { "year": "1971", "value": 0.69 },
@@ -21,20 +21,21 @@
     { "year": "2021", "value": 19.4 },
     { "year": "2022", "value": 21.7 },
     { "year": "2024", "value": 20.8 },
-    { "year": "2026", "value": 21.5 }
+    { "year": "2025", "value": 21.6 },
+    { "year": "2026", "value": 22.67 }
   ],
   "correlations": [
     { "asset": "Bitcoin", "r2": 0.94 },
-    { "asset": "Gold", "r2": 0.87 },
+    { "asset": "Gold", "r2": 0.89 },
     { "asset": "Nasdaq", "r2": 0.91 },
     { "asset": "S&P 500", "r2": 0.89 }
   ],
   "globalLiquidity": {
-    "fed": 7.2,
-    "ecb": 6.8,
-    "boj": 5.1,
-    "pboc": 6.2,
-    "total": 25.3,
-    "label": "$25.3T"
+    "fed": 6.8,
+    "ecb": 6.4,
+    "boj": 5.0,
+    "pboc": 6.5,
+    "total": 24.7,
+    "label": "$24.7T"
   }
 }
