@@ -1,5 +1,6 @@
 import { useState, useEffect, lazy, Suspense } from 'react'
 import { AnimatePresence, motion } from 'framer-motion'
+import AIChatWidget from './components/AIChatWidget'
 
 const tabs = [
   { id: 'thought-clock', name: 'Thought Clock', icon: '🧠', color: '#00ff88' },
@@ -108,6 +109,7 @@ export default function App() {
           </AnimatePresence>
         </Suspense>
       </main>
+      <AIChatWidget />
     </div>
   )
 }
