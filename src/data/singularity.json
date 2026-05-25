@@ -3,11 +3,11 @@
   "minutesToMidnight": 5,
   "factors": [
     { "name": "Reasoning", "value": 88, "description": "% of expert human reasoning capability" },
-    { "name": "Autonomous Tasks", "value": 58, "description": "SWE-Bench Pro completion rate" },
+    { "name": "Autonomous Tasks", "value": 78, "description": "SWE-Bench Pro completion rate" },
     { "name": "Scientific Discovery", "value": 40, "description": "Novel research capability" },
     { "name": "Self-Improvement", "value": 25, "description": "Ability to improve own architecture" },
     { "name": "Multi-Modal Integration", "value": 78, "description": "Vision, audio, code, reasoning combined" },
-    { "name": "Economic Displacement", "value": 64, "description": "Our AJDI score" },
+    { "name": "Economic Displacement", "value": 61, "description": "Our AJDI score" },
     { "name": "Expert Consensus", "value": 72, "description": "% of experts expect AGI by 2030" }
   ],
   "historicalPositions": [
