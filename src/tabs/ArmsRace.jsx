@@ -49,10 +49,17 @@ export default function ArmsRace() {
   // Context window - log scale for display
   const maxLogCtx = Math.log10(Math.max(...data.contextWindow.map(c => c.tokens)))
 
+  // Compute days-since-last-frontier live from lastDate so the headline never
+  // freezes at a build-time snapshot. Falls back to the JSON value if unparseable.
+  const computedDaysSince = Math.floor((Date.now() - new Date(data.lastDate)) / 86400000)
+  const daysSinceLastFrontier = Number.isFinite(computedDaysSince) && computedDaysSince >= 0
+    ? computedDaysSince
+    : data.daysSinceLastFrontier
+
   return (
     <div>
       <Hero
-        value={String(data.daysSinceLastFrontier)}
+        value={String(daysSinceLastFrontier)}
         label="DAYS SINCE LAST FRONTIER MODEL"
         sub={`Latest: ${data.lastModel} (${data.lastDate})`}
         color="citrine"

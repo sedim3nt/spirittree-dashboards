@@ -1,13 +1,13 @@
 {
-  "nationalDebt": 39200000000000,
-  "debtGrowthPerSecond": 532,
-  "m2Supply": 22670000000000,
+  "nationalDebt": 39010000000000,
+  "debtGrowthPerSecond": 57870,
+  "m2Supply": 23115000000000,
   "purchasingPower1971": 0.13,
-  "realInterestRate": -0.8,
+  "realInterestRate": 1.6,
   "stats": {
-    "m2Label": "$22.67T",
+    "m2Label": "$23.12T",
     "purchasingPowerLabel": "$0.13",
-    "realRateLabel": "-0.8%"
+    "realRateLabel": "1.6%"
   },
   "m2History": [
     { "year": "1971", "value": 0.69 },
@@ -22,7 +22,7 @@
     { "year": "2022", "value": 21.7 },
     { "year": "2024", "value": 20.8 },
     { "year": "2025", "value": 21.6 },
-    { "year": "2026", "value": 22.67 }
+    { "year": "2026", "value": 23.12 }
   ],
   "correlations": [
     { "asset": "Bitcoin", "r2": 0.94 },

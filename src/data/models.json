@@ -1,7 +1,7 @@
 {
-  "daysSinceLastFrontier": 26,
-  "lastModel": "GPT-5.4",
-  "lastDate": "2026-03-05",
+  "daysSinceLastFrontier": 5,
+  "lastModel": "Qwen 3.7 Max",
+  "lastDate": "2026-05-20",
   "timeline": [
     { "name": "GPT-4", "company": "OpenAI", "date": "2023-03-14", "color": "#10b981" },
     { "name": "Claude 3 Opus", "company": "Anthropic", "date": "2024-03-04", "color": "#f97316" },
@@ -21,7 +21,11 @@
     { "name": "Gemini 2.5 Ultra", "company": "Google", "date": "2026-01-18", "color": "#3b82f6" },
     { "name": "Claude Opus 4.6", "company": "Anthropic", "date": "2026-02-05", "color": "#f97316" },
     { "name": "Gemini 3.1 Pro", "company": "Google", "date": "2026-02-19", "color": "#3b82f6" },
-    { "name": "GPT-5.4", "company": "OpenAI", "date": "2026-03-05", "color": "#10b981" }
+    { "name": "GPT-5.4", "company": "OpenAI", "date": "2026-03-05", "color": "#10b981" },
+    { "name": "Claude Opus 4.7", "company": "Anthropic", "date": "2026-04-16", "color": "#f97316" },
+    { "name": "GPT-5.5", "company": "OpenAI", "date": "2026-04-23", "color": "#10b981" },
+    { "name": "Gemini 3.5 Flash", "company": "Google", "date": "2026-05-19", "color": "#3b82f6" },
+    { "name": "Qwen 3.7 Max", "company": "Alibaba", "date": "2026-05-20", "color": "#ef4444" }
   ],
   "benchmarks": [
     { "model": "Claude Opus 4.6", "arena": 1503, "swe": 81, "humaneval": 97, "mmlu": 93 },
